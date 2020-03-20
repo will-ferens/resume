@@ -1,0 +1,24 @@
+body {
+    display: grid;
+    grid-template-columns: 25% 5% 70%;
+}
+header {
+    grid-template-columns: 25% 5% 70%;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: grid;
+
+}
+.title-container {
+    grid-column: 3;
+}
+aside {
+    grid-column: 1;
+}
+
+ul {
+    list-style: none;
+}
+main {
+    grid-column: 3;
+}
