@@ -1,24 +1,69 @@
 body {
     display: grid;
     grid-template-columns: 25% 5% 70%;
+    grid-template-rows: 22% 78%;
+    font-family: "Helvetica Neue";
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+@page {
+    size: 8in 11in;
+}
+h1, h3, ul {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
 }
 header {
     grid-template-columns: 25% 5% 70%;
     grid-column-start: 1;
     grid-column-end: 4;
     display: grid;
+    height: 270px;
 
+}
+.contact-container {
+    text-align: right;
+    padding: 12px 0 0 0;
+}
+.contact-container h3 {
+    padding: 6px 0 0 0;
 }
 .title-container {
     grid-column: 3;
 }
+
+.title-container h1 {
+    font-size: 86px;
+}
+
+.title-container h3 {
+    font-size: 58px;
+}
+
+
 aside {
     grid-column: 1;
+    text-align: right;
 }
 
 ul {
     list-style: none;
 }
+
 main {
     grid-column: 3;
+    margin: -70px 0 0 0;
 }
+
+main .experience-container hr {
+    width: 45%;
+    position: absolute;
+    right: 100px;
+    top: 204px;
+}
+
