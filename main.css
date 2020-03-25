@@ -1,6 +1,6 @@
 body {
     display: grid;
-    grid-template-columns: 25% 5% 70%;
+    grid-template-columns: 20% 5% 75%;
     grid-template-rows: 22% 78%;
     font-family: "Helvetica Neue";
     color: #333;
@@ -13,13 +13,17 @@ body {
 h1, h3, ul {
     margin: 0;
     padding: 0;
+    list-style: none;
 }
-
+p {
+    margin: 0;
+}
 a {
     text-decoration: none;
+    font-size: 14px;
 }
 header {
-    grid-template-columns: 25% 5% 70%;
+    grid-template-columns: 20% 5% 75%;
     grid-column-start: 1;
     grid-column-end: 4;
     display: grid;
@@ -38,32 +42,52 @@ header {
 }
 
 .title-container h1 {
-    font-size: 86px;
+    font-size: 42px;
 }
 
 .title-container h3 {
-    font-size: 58px;
+    font-size: 24px;
 }
 
 
 aside {
     grid-column: 1;
     text-align: right;
+    margin: 48px 0 0 0;
 }
 
-ul {
-    list-style: none;
+aside div {
+    margin: 16px 0;
 }
 
 main {
     grid-column: 3;
-    margin: -70px 0 0 0;
+    margin: -130px 12px 0 0;
 }
 
-main .experience-container hr {
-    width: 45%;
-    position: absolute;
-    right: 100px;
-    top: 204px;
+main ul {
+    list-style: disc;
+    padding: 0 0 0 18px;
+}
+
+main div {
+    margin: 12px 0;
+}
+
+.section-title {
+    display: inline;
+}
+
+.section-title span {
+    float: right;
+
+}
+
+main .location {
+    font-size: 14px;
+}
+
+main .location span{
+    float: right;
 }
 
